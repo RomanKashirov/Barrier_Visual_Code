@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32F411 Debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "build-Debug/STM32F411.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "preLaunchTask": "Build Debug",
+            "device": "STM32F411",
+            "svdFile": "STM32F411.svd",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ]
+        }
+    ]
+}
